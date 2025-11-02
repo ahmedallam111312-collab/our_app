@@ -2,7 +2,7 @@ import { GoogleGenAI, Type, Chat } from "@google/genai";
 import { PatientRecord, LabResults, AIResponse } from '../types';
 import { MEDICAL_KB } from '../constants/medicalKB';
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.VITE_API_KEY;
 
 if (!API_KEY) {
   console.error("API_KEY environment variable not set.");
